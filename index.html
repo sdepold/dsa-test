@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>DSA Test</title>
+    <script type="text/javascript">
+      window.onload = function () {
+        const pageId = 10003;
+        const baseurl = "https://www.ebay.fr";
+        const infinputparameters = JSON.stringify({
+          pageId,
+          mobilePlaceHolder: "helpIconElementId",
+        });
+        const url =
+          baseurl +
+          "/ifh/inflowcomponent?input=" +
+          encodeURIComponent(infinputparameters);
+
+        var script = document.createElement("script");
+        script.src = url;
+        document.body.appendChild(script);
+      };
+    </script>
+  </head>
+  <body>
+    DSA Test
+  </body>
+</html>
